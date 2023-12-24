@@ -1,8 +1,7 @@
 import tkinter as tk
 import openai
 
-openai.api_key = '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'
-
+openai.api_key = 'Your custom AI API key'
 def get_ai_response(message):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
