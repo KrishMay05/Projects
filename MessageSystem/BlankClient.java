@@ -78,7 +78,6 @@ public class BlankClient extends JComponent implements Runnable {
     private boolean login = false;
     private boolean loginIf = false;
     private boolean login2 = false;
-    private boolean consumerBool = true;
     private JTextField usernameField;
     private JTextField passwordField;
     private JTextField usernameFieldLog;
@@ -465,7 +464,6 @@ public class BlankClient extends JComponent implements Runnable {
                 SwingUtilities.invokeLater(() -> login = true);
                 SwingUtilities.invokeLater(() -> buttonClick = true);
                 SwingUtilities.invokeLater(() -> loginIf = true);
-                SwingUtilities.invokeLater(() -> consumerBool = true);
                 content.removeAll();
                 content.revalidate();
                 content.repaint();
@@ -488,7 +486,6 @@ public class BlankClient extends JComponent implements Runnable {
                 SwingUtilities.invokeLater(() -> login = true);
                 SwingUtilities.invokeLater(() -> buttonClick = true);
                 SwingUtilities.invokeLater(() -> loginIf = true);
-                SwingUtilities.invokeLater(() -> consumerBool = false);
                 content.removeAll();
                 content.revalidate();
                 content.repaint();
